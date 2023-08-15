@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <h1>Welcome to Our Website</h1>
-    <h3><a href="signUp.html" >Register Now</a></h3>
-    <h3>already have an account? <a href="signIn.html">Signin</a></h3>
+    <div id="navDiv">
+        <div id="logoDiv">
+            <img src="./imgs/logo.jpeg" id="logoImg" alt="logo img"/>
+        </div>
+        <div id="logNavDiv">
+            <a href="signUp.html" class="aNav">Sign Up</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="signIn.html" class="aNav">Login</a>
+        </div>
+    </div>
+    <article>
+        <div id="wlcP">
+            <h1>Welcome, <br/><span>Cloud Bird Customers</span></h1><br/><br/>
+            <h3><a href="signUp.html" id="regA" >Register Now</a></h3>
+            <h4 >already have an account? <a href="signIn.html" id="sinA">Signin</a></h3>
+        </div>
+        <div id="wlcI">
+            <img src="./imgs/Screenshot 2023-08-15 020958-PhotoRoom.png-PhotoRoom.png" id="wlcImg" alt="welcome image">
+        </div>
+    </article>
 </body>
 </html>
