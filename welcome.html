@@ -4,32 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./welcome.css" />
 </head>
 <body>
-    <a href="index.html">logout</a>
-    <h1></h1>
-    <div id="userdiv" style="display:none ;">
-        Your Data: 
-        <p id="nameP"></p>
-        <p id="emailP"></p>
-        <p id="mobileP"></p>
+    <div id="navDiv">
+        <div id="logoDiv">
+            <img src="./imgs/logo.jpeg" id="logoImg" alt="logo img"/>
+        </div>
+        <div id="logNavDiv">
+            <a href="index.html" class="aNav">Logout</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+        </div>
     </div>
-    <div id="superUserDiv" >
-
-    </div>
-    <table id="tbl" border="2" style="display: block;">
-        <tr>
-            <!-- ID Name Email password date created date last login -->
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Password</th>
-            <th>BirthDate</th>
-            <th>Date Created</th>
-            <th>Last Login</th>
-        </tr>
-    </table>
-
+    <article>
+        <h1></h1>
+        <div id="rhtDiv">
+            <img src="./imgs/My project(3).png" id="wlcImg" alt="welcome image"/>
+        </div>
+        <div id="leftDiv">
+            <div id="userdiv" style="display:none ;">
+                <h2>Your Data: </h2><br/><br/>
+                <p id="nameP"></p><br/>
+                <p id="emailP"></p><br/>
+                <p id="mobileP"></p>
+            </div>
+            <div id="superUserDiv" style="display: none;" >
+                <h2>Users Data:</h2>
+            </div>
+            <!-- <table id="tbl"  style="display: block;">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>BirthDate</th>
+                    <th>Date Created</th>
+                    <th>Last Login</th>
+                </tr>
+            </table> -->
+        </div>
+    </article>
     <script src="./welcome.js"></script>
 </body>
 </html>

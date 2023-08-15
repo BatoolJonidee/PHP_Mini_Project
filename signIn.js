@@ -23,6 +23,9 @@ btn.addEventListener("click",function(event){
             localStorage.setItem('superUserFlag',data.user['superUserFlag'])
             window.location.href='./welcome.html';
         }else{
+            document.getElementById("invalidP").style.display='block';
+            document.getElementById("invalidP").classList.add("invalid");
+            document.getElementById("invalidP").classList.remove("valid");
             document.getElementById("invalidP").textContent=data['message'];
         }
         })

@@ -8,25 +8,44 @@ body{
     overflow-x: hidden;
     background-image: url("./imgs/bg1.png");
     background-size: cover;   
-    display: flex; 
-    justify-content: center;
     /* align-content: center; */
     /* align-items: center; */
+}
+#navDiv{
+    /* position: static; */
+    /* top: 0; */
+    height: 50px;
+    width:100%;
+    background-color: white;
+    display:flex ;
+    justify-content:space-between ;
+}
+#logoDiv{
+    width:20%;
+    margin-left: 5%;
+    height: 50px;
+}
+#logoImg{
+    height: 50px;
+}
+article{
+    display:flex ;
+    justify-content: space-around;
+    padding-top: 12%;
 }
 #loginFormID {
     width: 50%;
     /* align-self: center; */
-    margin-top:10%;
+    /* margin-top:10%; */
     text-align: center;
     border: 5px solid rgb(133, 133, 223);
     border-radius: 10px;
-    padding: 2%;
-    background-image: url("./imgs/bg2.png");
-    background-size: cover;
+    padding: 6%;
+    background-color: #9463cc;
 }
 input{
-    width:70%;
-    margin:1%;
+    width:80%;
+    margin-top:1%;
     padding: 2%;
     height: 40px;
     background-color: #e8cfff;
@@ -46,7 +65,7 @@ input:hover{
     font-weight: bolder;
 }
 #submitBtn:hover {
-    width:65%;
+    width:85%;
     font-size: 22px;
     color: #e8cfff;
     box-shadow: 2px 2px 10px #d5cfdf;
@@ -64,7 +83,7 @@ p {
     text-align: center;
 }
 .invalid {
-    color: rgb(251, 170, 170);
+    color: rgb(73, 3, 3);
     text-align: center;
 }
 .invalid:before {
@@ -72,34 +91,79 @@ p {
     text-align: center;
 }
 @media (min-width:600px) and (max-width:900px){
-    form{
-        width:70%;
+    #imgdiv{
+        width:30%;
+    }
+    #signInImg{
+        /* border: 1px solid #301362; */
+        width:100%;
+        padding-top: 2%;
+    }
+    #loginFormID{
+        width:60%;
     }
     input{
         width:80%;
     }
 }
 @media (min-width:450px) and (max-width:599.9px){
-    form{
+    article{
+        flex-direction: column;
+    }
+    #imgdiv{
         width:80%;
+        text-align: center;
+        margin:0 auto;
+    }
+    #loginFormID{
+        width:80%;
+        margin: 0 auto;
     }
     input{
         width:80%;
     }
 }
 @media (min-width:350px) and (max-width:449.9px){
-    form{
+    article{
+        flex-direction: column;
+    }
+    #imgdiv{
+        width:50%;
+        text-align: center;
+        margin:0 auto;
+    }
+    #signInImg{
+        /* border: 1px solid #301362; */
+        width:100%;
+        padding-top: 2%;
+    }
+    #loginFormID{
         width:90%;
+        margin: 0 auto;
     }
     input{
         width:90%;
     }
 }
 @media (max-width:349.9px){
-    form{
-        width:98%;
+    article{
+        flex-direction: column;
+    }
+    #imgdiv{
+        width:60%;
+        text-align: center;
+        margin:0 auto;
+    }
+    #signInImg{
+        /* border: 1px solid #301362; */
+        width:100%;
+        padding-top: 2%;
+    }
+    #loginFormID{
+        width:100%;
+        margin: 0 auto;
     }
     input{
-        width:98%;
+        width:100%;
     }
 }

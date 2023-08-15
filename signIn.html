@@ -7,14 +7,25 @@
     <link rel="stylesheet" href="./signIn.css" />
 </head>
 <body>
-    <form method="POST" id="loginFormID">
-        <!-- <label for="email">Email:</label><br/> -->
-        <input type="email" name="email" id="email" placeholder="Email.."/><br/>
-        <!-- <label for="password">Password:</label><br/> -->
-        <input type="password" name="password" id="password" placeholder="Password.."/><br/><br/>
-        <input type="submit" id="submitBtn" value="Login"/>
-        <P style="display: block; color:white" id="invalidP"></P>
-    </form>
+    <div id="navDiv">
+        <div id="logoDiv">
+            <img src="./imgs/logo.jpeg" id="logoImg" alt="logo img"/>
+        </div>
+       
+    </div>
+    <article>
+        <div id="imgdiv">
+            <img src="./imgs/My project(2).png" id="signInImg" alt="sign up image"/>
+        </div>
+        <form method="POST" id="loginFormID">
+            <!-- <label for="email">Email:</label><br/> -->
+            <input type="email" name="email" id="email" placeholder="Email.."/><br/>
+            <!-- <label for="password">Password:</label><br/> -->
+            <input type="password" name="password" id="password" placeholder="Password.."/><br/><br/>
+            <input type="submit" id="submitBtn" value="Login"/>
+            <P  id="invalidP"></P>
+        </form>
+    </article>
     <script src="./signIn.js"></script>
 </body>
 </html>
